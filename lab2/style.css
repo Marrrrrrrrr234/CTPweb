@@ -1,0 +1,94 @@
+/* Устанавливаем фоновый цвет страницы */
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Центрируем контент и устанавливаем фиксированную ширину */
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/* Стили для заголовков */
+h1, h2, h3 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Подключаем шрифты для каждого фильма */
+@font-face {
+    font-family: 'Font1';
+    src: url('fonts/font1.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Font2';
+    src: url('fonts/font2.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Font3';
+    src: url('fonts/font3.ttf') format('truetype');
+}
+
+/* Применяем разные шрифты для каждого фильма */
+.description3  {
+    font-family: 'Font1';
+text-align: center;
+}
+
+
+.description2 {
+  font-family: 'Font2';
+ text-align: right;
+}
+
+.description1   {
+    font-family: 'Font3';
+    text-align: left;
+}
+
+/* Убираем маркеры списка и стили для якорных ссылок */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Разное выравнивание текста для каждого фильма */
+#notebook p {
+    text-align: center;
+}
+
+#greenmile p {
+    text-align: left;
+}
+
+/* Единый размер для всех изображений и закругленные углы */
+img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover; 
+    border-radius: 20px;
+    margin: 10px;
+}
+/* Примеры выделения текста разными способами */
+p strong {
+    font-weight: bold; /* Тег strong */
+}
+
+p b {
+    font-weight: bold; /* Тег b */
+}
+
+.bold-text {
+    font-weight: bold; /* CSS свойство */
+}
